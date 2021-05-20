@@ -206,19 +206,19 @@
                 <div class="contato-right">
                     <h1>Contato</h1>
 
-                    <form action="">
+                    <form action="./php/envioEmail.php" method="POST">
                         <div class="input-group">
-                            <input type="text" class="field" id="nome">
+                            <input type="text" class="field" name="nome" id="nome">
                             <label for="nome" class="field-label">Nome</label>
                         </div>
 
                         <div class="input-group">
-                            <input type="text" class="field" id="email">
+                            <input type="text" class="field" name="email" id="email">
                             <label for="email" class="field-label">E-Mail</label>
                         </div>
 
                         <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
+                            <textarea class="field" name="mensagem" id="msg"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
                         <button type="submit" class="btn btn-submit">Enviar</button>
