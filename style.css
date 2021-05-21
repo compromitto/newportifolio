@@ -15,6 +15,10 @@
     --font-secundary: "Josefin Slab", serif;
     --font-action:"Mulish", serif; 
 }
+
+html {
+    scroll-behavior: smooth;
+}
 /* HAMBURGUER */
 
 .hamburguer {
@@ -160,7 +164,7 @@ header {
     background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
     background: linear-gradient(to right, #182848, #4b6cb7);
     animation: moveBanner 1s 0.9s forwards;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .banner button:hover {
@@ -170,10 +174,10 @@ header {
 
 @keyframes moveBanner {
     0%{
-        transform: translateY(10rem);
+        transform: translateY(35rem) rotateY(-60deg);        
     }
     100%{
-        transform: translateY(0);        
+        transform: translateY(0) rotateY(0);                
         opacity: 1;
     }
 }
@@ -537,4 +541,57 @@ header {
 .btn-submit:hover {
     box-shadow: 0rem 0rem 2rem rgba(0,0,0,0.6);
     color: white;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #4b6cb7;
+    font-size: 1.5rem;
+}
+
+.social-list ul {
+    display: flex;
+}
+
+.social-list a:hover {   
+    color: #a7a7a7;
+}
+
+/* LINK TOP */
+
+#link-topo {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    color: #4b6cb7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4b6cb7;
+    border-radius: 3rem;    
 }

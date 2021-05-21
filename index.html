@@ -22,7 +22,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="home">
             <div class="img-wrapper">
                 <img src="imgs/bg.jpg" alt="">
             </div>
@@ -36,21 +36,21 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#Sobre" class="menu-link">Sobre</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="#"><i class="far fa-file"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://drive.google.com/file/d/1LJ_PddZaKnU7JrN_uFDZigg6p2XRI2Dr/view?usp=sharing"><i class="far fa-file"></i></a>
+                <a href="https://github.com/BrunoSouzaDev"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bruno-souza-579605164/"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </aside>
 
-        <section class="sessao-conhecimento">
+        <section class="sessao-conhecimento" id="conhecimentos">
             <div class="sessao-header">
                 <h1>Conhecimentos</h1>
             </div>
@@ -132,7 +132,7 @@
             </div>
         </section>
 
-        <section class="sessao-projetos">
+        <section class="sessao-projetos" id="projetos">
             <div class="sessao-header">
                 <h1 id="t1">Projetos</h1>
             </div>
@@ -200,13 +200,14 @@
             </div>
         </section>
 
-        <section class="sessao-contato">
+        <section class="sessao-contato" id="contato">
             <div class="contato-wrapper">
                 <div class="contato-left"></div>
                 <div class="contato-right">
                     <h1>Contato</h1>
 
-                    <form action="./php/envioEmail.php" method="POST" name="form">
+                    <form action="./php/envioEmail.php" method="post" name="form" id="form">
+                        
                         <div class="input-group">
                             <input type="text" class="field" name="nome" id="nome">
                             <label for="nome" class="field-label">Nome</label>
@@ -218,7 +219,7 @@
                         </div>
 
                         <div class="input-group">
-                            <textarea class="field" name="mensagem" id="msg"></textarea>
+                            <textarea class="field" name="mensagem" id="mensagem"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
                         <button type="submit" class="btn btn-submit">Enviar</button>
@@ -226,6 +227,24 @@
                 </div>
             </div>
         </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2021 - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Bruooo"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/bruno_dsouza/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/5551995989709"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </div>
 
     
