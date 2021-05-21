@@ -338,6 +338,39 @@ header {
     width: 100%;
 }
 
+/* SOBRE */
+
+.sobre {
+    font-family: var(--font-secundary);
+    font-size: 1.4rem;
+    height: 50vh;        
+    line-height: 0.75cm;
+    text-align: justify;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherthings {
+    margin-top: 2rem;   
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem; 
+}
+
+
 /* PROJETOS */
 
 .projetos {
