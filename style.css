@@ -628,3 +628,23 @@ footer {
     border: 1px solid #4b6cb7;
     border-radius: 3rem;    
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+    .sessao-header h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        }
+    .conhecimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }    
+    .conhecimentos-img-wrapper {
+        width: 0;
+        height: 0;
+    }
+}
