@@ -300,7 +300,7 @@ header {
 .sessao-header h1 {
     font-family: var(--font-primary);
     font-size: 3rem;
-    color: #4b4b4b;
+    color: #f1204e;
     border-bottom: solid 3px #4b6cb7;
     margin-bottom: 1.5rem;
     margin-top: 7rem;
@@ -309,7 +309,7 @@ header {
 .conhecimento-header {
     display: flex;
     align-items: center; 
-    color: #4b4b4b;
+    color: #f1204e;
 }
 
 .conhecimento-header i {
