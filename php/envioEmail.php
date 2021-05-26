@@ -17,7 +17,7 @@
   ";
   
   //Emails para quem será enviado o formulário
-  $destino = "bruno1994deilson@gmail.com";
+  $destino = "marcos@dubcom.com.br";
   $assunto = "Contato pelo Site";
 
   //Este sempre deverá existir para garantir a exibição correta dos caracteres
