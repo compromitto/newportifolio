@@ -227,7 +227,7 @@
                 <div class="contato-right">
                     <h1>Contato</h1>
 
-                    <form action="./php/envioEmail.php" method="post" name="form" id="form">
+                    <form action="Email.send()" method="post" name="form" id="form">
                         
                         <div class="input-group">
                             <input type="text" class="field" name="nome" id="nome">
@@ -245,6 +245,20 @@
                         </div>
                         <button type="submit" class="btn btn-submit">Enviar</button>
                     </form>
+                    
+                    <script>
+                    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "marcos@dubcom.com.br",
+    Password : "senhaTeste",
+    To : 'marcos@dubcom.com.br',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+                    </script>
                 </div>
             </div>
         </section>
@@ -273,4 +287,6 @@
 </body>
 
 <script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 </html>
